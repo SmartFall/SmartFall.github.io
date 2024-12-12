@@ -49,11 +49,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
   <script src=/libs/custom/my_js.js></script>
+  <script src="/libs/custom/nav.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href=/libs/icon.png>
-  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/libs/fall_icon_64x64.png>
 
 </head>
 <body>
@@ -62,15 +63,22 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-    <section class="header">
+    <section class="header" id="headerTop">
       <div class="row">
         <div class="two columns"> 
 <!--         <p></p> -->
         </div>
         <div class="nine columns main-description">
-            <center><img class="u-max-full-width" src='assets/profile-pics/Banner.jpg'></center>
+            <center>
+                <h4><b> SmartFall: Personalized Watch-based Fall Risk Analysis and Detection with Cross Modal Learning</b></h4>
+                <h6>By Texas State University, UT Dell Medical School, and Illinois Institute of Technology.</h6>
+                <h6>
+                  <img src="assets/banners_logos/nsf_logo.svg" class="img_logos"></img>
+                  The project is funded by NSF-SCH Program from 09/01/2021-08/31/2025</h6>
+            </center>
              &nbsp
-            <center><h4> SmartFall</h4></center>
+            <center><img class="u-max-full-width" src='assets/banners_logos/smartfall-banner.svg'></center>
+
 <!--             <p><br>
               <br>
             </p>
@@ -90,9 +98,10 @@
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href=/index.html#lab>About Us</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#datasets>Datasets</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#people>Project Members</a></li>
-          <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Research Works</a></li>
-          <li class="navbar-item"><a class="navbar-link" href=/index.html#Dataset>Dataset</a></li> 
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Research Papers</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#demos>Demos</a></li> 
         </ul>
       </div>
     </nav>
@@ -110,533 +119,489 @@
 
 
 <!-- ========== News ========== -->
-<!-- Update the recent news here! -->
+<!-- 
+Update the recent news here.
+Should be in the chronological order! 
+-->
 <div class="docs-section" id="news">
-  <h4>News</h4>
-  
-  <p> 11-2021: <a href="assets/PhD-OpportunitiesFlyer.jpg">Funded Ph.D. Positions available</a> 
-  <p> 01-2022: One Crossmodal KD paper has been accepted to ICASSP 2022. </p>
-  <p> 06-2022: <a href="https://news.txstate.edu/featured-faculty/2022/enhancing-safety-for-older-adults-through-technology.html">Texas State professor enhancing safety for older adults through technology. </a>
-  <p> 07-2022: Progressive Cross-Modal Knowledge Distillation for Skeleton-to-sensor Human Action Recognition accepted to ACM MM 2022 </p>
-  <p> 06-2023: One Transformer-based GAN paper has been accepted to ICAI 2023. </p>
-  <p> 01-2024: One Cross-architecture KD paper has been accepted to FG 2024. </p>
-  <p> 02-2024: Dr. Ngu presented Fall Detection Technologies to over 50 seniors at Price Center, San Marcos <p>
-  <p> 03-2024:  Pole balancing on the fingertip: Model-motivated machine learning forecasting of falls accepted to Frontier in Physiology</p>
-  <p> 03-2024:  The Impact of Synthetic Data on Fall Detection Application accepted to AIME 2024 Conference at Utah </p>
-  <p> 03-2024:  An Empirical Study on AI-Powered Edge Computing Architectures for Real-Time IoT Applications accepted to COMPSAC 2024
-</p> 
-  <p> 04-2024: LightHART: A Ligght-weight Transformer for Human Activity Recognition has been accepted in ICPR in September 2024. </p>  
-  <p>05:2024: SmartFallMM: An inter-generational multimodal Human Activity Dataset for Cross-Modal Learning submitted to IEEE perComp 2024 </p>
-  <p>07-2024: Dr. Ngu presented AI-Powered Edge Computing Architecture at COMPSAC Conference in Japan in July 2024</p>
-  <p>08-2024: Dr. Ngu presented Fall Detection Technologies  at the Aging in Texas Conference in Austin in August 2024</p>
+  <h4>Latest News</h4>
+  <p>10-2024: SSDL:Sensor-to-Skeleton Diffusion Model with Lipschitz Regularization for Human Activity accepted by MMM 2025</p>
   <p>09-2024: Experimental Study of Long Short-Term Memory and Transformer Models for Fall Detection on Smartwatches published at sensors 24(19)</p>
-    <p>10-2024: SSDL:Sensor-to-Skeleton Diffusion Model with Lipschitz Regularization for Human Activity accepted by MMM 2025</p>
-  
+  <p>08-2024: Dr. Ngu presented Fall Detection Technologies  at the Aging in Texas Conference in Austin in August 2024</p>
+  <p>07-2024: Dr. Ngu presented AI-Powered Edge Computing Architecture at COMPSAC Conference in Japan in July 2024</p>
+  <p>05:2024: SmartFallMM: An inter-generational multimodal Human Activity Dataset for Cross-Modal Learning submitted to IEEE perComp 2024 </p>
+  <p> 04-2024: LightHART: A Ligght-weight Transformer for Human Activity Recognition has been accepted in ICPR in September 2024. </p>
+  <p> 03-2024:  An Empirical Study on AI-Powered Edge Computing Architectures for Real-Time IoT Applications accepted to COMPSAC 2024
+  </p> 
+  <p> 03-2024:  The Impact of Synthetic Data on Fall Detection Application accepted to AIME 2024 Conference at Utah </p>
+  <p> 03-2024:  Pole balancing on the fingertip: Model-motivated machine learning forecasting of falls accepted to Frontier in Physiology</p>
+  <p> 02-2024: Dr. Ngu presented Fall Detection Technologies to over 50 seniors at Price Center, San Marcos <p></p>
+  <p> 01-2024: One Cross-architecture KD paper has been accepted to FG 2024. </p> 
+
+<!-- 
+Old news should be moved in this section.
+-->
+
+  <h5>Old News</h5>
+
+  <p> 06-2023: One Transformer-based GAN paper has been accepted to ICAI 2023. </p>
+  <p> 07-2022: Progressive Cross-Modal Knowledge Distillation for Skeleton-to-sensor Human Action Recognition accepted to ACM MM 2022 </p>
+  <p> 06-2022: <a href="https://news.txstate.edu/featured-faculty/2022/enhancing-safety-for-older-adults-through-technology.html">Texas State professor enhancing safety for older adults through technology. </a></p>
+  <p> 01-2022: One Crossmodal KD paper has been accepted to ICASSP 2022. </p>
+  <p> 11-2021: <a href="assets/PhD-OpportunitiesFlyer.jpg">Funded Ph.D. Positions available</a>
+
 </div>
-   <!--  ====Dataset====   --> 
-<div class="docs-section" id="Dataset">
+
+
+<!--  ====Dataset====   --> 
+<div class="docs-section" id="datasets">
   <h4>Dataset</h4>
-   <p> 09-2021: <a href="https://userweb.cs.txstate.edu/~hn12/data/SmartFallDataSet.zip">Dataset for Fall Detection is avaliable here. </a>
-  <p> 09-2021: <a href="https://userweb.cs.txstate.edu/~hn12/data/Real-World-ADL-Data.zip">Dataset for ADL from nine seniors participants is available here. </a>
+  <p> 08-2024: A Multimodal Dataset for Enhanced Human Activity Recognition (SmartFallMM) is available 
+    <a href="https://anonymous.4open.science/r/smartfallmm-4588">here</a>.
+    <!-- <a class="dtst_paper_button" href="#" target="_blank">Paper</a> -->
+  </p>
+   <p> 09-2021: Dataset for Fall Detection is available 
+    <a href="https://userweb.cs.txstate.edu/~hn12/data/SmartFallDataSet.zip">here</a>.
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6210545/" target="_blank"></a>
+    <a class="dtst_paper_button" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6210545/" target="_blank">Paper</a>
+  </p>
+  <p> 09-2021: Dataset for ADL from nine seniors participants is available 
+    <a href="https://userweb.cs.txstate.edu/~hn12/data/Real-World-ADL-Data.zip">here</a>. 
+    <a class="dtst_paper_button" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6210545/" target="_blank">Paper</a>
+  </p>
+  
 </div>
   
 <!--  ========== People ==========  -->
 <div class="docs-section" id="people">
   <h4>Project Members</h4>
-  
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#tabs1" onclick="showTab(1,4)">Faculty</div></li>
-    <li><div class="button active" data-ref="#tabs2" onclick="showTab(2,4)">Student</div></li>
-    <li><div class="button active" data-ref="#tabs3" onclick="showTab(3,4)">Consultant</div></li>
+    <li><div class="button" data-ref="#tabs2" onclick="showTab(2,4)">Student</div></li>
+    <li><div class="button" data-ref="#tabs3" onclick="showTab(3,4)">Consultant</div></li>
     <li><div class="button" data-ref="#tabs4" onclick="showTab(4,4)">Alumni</div></li>
   </ul>
 
-
   <div class="tab-content">
-     <div class="tab-pane active" id="tabs1">
-
-       
-         <div class="row">
-
-           
-           <div class="three columns">        
-            <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://userweb.cs.txstate.edu/~hn12/">
-                    <img src="assets/profile-pics/Ngu.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Dr.Anne H. H. Ngu</b> <br/>
-                  Professor, TXST
-                </div>
-              
+    <!-- Faculty Tab -->
+    <div class="tab-pane active" id="tabs1">
+      <div class="row">
+        <!-- Member 1 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://userweb.cs.txstate.edu/~hn12/" target="_blank" title="Click to view profile page">
+                <img src="assets/profile-pics/Ngu.jpeg" class="u-max-full-width" alt="Dr. Anne H. H. Ngu" />
+              </a>
             </div>
-           </div>
-
-
-
-
-           
-            
-            <div class="three columns">
-             <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://tomyan555.github.io/">
-                    <img src="assets/members/Yanyan.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Dr.Yan Yan</b> <br/>
-                  Assisstant Professor, IIT
-                </div>
-              
-              </div>
-             </div>
-
-
-
-
-           
-           
-           <div class="three columns">
-             <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://sites.utexas.edu/jtchang/">
-                    <img src="assets/members/Chang.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Dr.Joshua Chang</b> <br/>
-                  Assisstant Professor, UT Austin
-                </div>
-              
-              </div>
-             </div>  
-           
-
-
-
-
-
-           
-           <div class="three columns">
-             <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="http://faculty.jsd.claremont.edu/jmilton/">
-                    <img src="assets/members/Milton.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Dr.John G. Milton</b> <br/>
-                  Professor, CMC
-                </div>
-              
-              </div>
-             </div>    
-           
-           
-        </div> 
-      </div>
-
-
-     <div class="tab-content">
-       <div class="tab-pane" id="tabs2"> 
-
-         
-          <div class="row">
-
-            
-            
-            <div class="three columns">
-              <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://sites.google.com/view/minakshi-debnath/home?authuser=0">
-                    <img src="assets/members/Minakshi.jpg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Minakshi Debnath</b> <br/>
-                  Ph.D. student, TXST
-                </div>
-                
-             </div>
+            <div class="project-caption">
+              <b>Dr. Anne H. H. Ngu</b><br />Professor, TXST
             </div>
-
-
-
-            
-            
-            <div class="three columns">
-              <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://tousifulhaque.github.io/">
-                    <img src="assets/members/Tousiful.png" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Syed Tousiful Haque</b> <br/>
-                  Ph.D. student, TXST
-                </div>
-                
-             </div>
-            </div>
-
-
-
-
-            
-
-            <div class="three columns">
-              <div class="member-container">
-
-
-                <div class="member-image-container">
-                  <a href="https://cpi12.github.io/">
-                    <img src="assets/members/shahriar.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Shahriar Kabir</b> <br/>
-                  Ph.D. student, TXST
-                </div>
-                
-             </div>
-            </div>
-
-
-
-            
-              <div class="three columns">
-              <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="">
-                    <img src="assets/members/Awatif.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Awatif Yasmin</b> <br/>
-                     M.S. student, TXST
-                </div>
-                
-             </div>
-            </div>
-
-
           </div>
-
-
-
-        <div class="row">
-
-                     
-            <div class="three columns">
-              <div class="member-container">
-
-               <div class="member-image-container">
-                  <a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdavid-torrente&data=05%7C02%7Cj_n317%40txstate.edu%7Cacf048407ce047919bf108dc531d35e0%7Cb19c134a14c94d4caf65c420f94c8cbb%7C0%7C0%7C638476632184868978%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=jiyEC7h3B7fAm0sSfrMze%2FXH9YqzjsRB4pcl%2BAW%2FlKo%3D&reserved=0">
-                    <img src="assets/members/dTorrente.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>David Torrente</b> <br/>
-                  M.S. student, TXST
-                </div>
-                
-             </div>
+        </div>
+        <!-- Add the rest of the members here following the same structure -->
+        <!-- Member 2 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://tomyan555.github.io/" target="_blank" title="Click to view profile page">
+                <img src="assets/members/Yanyan.jpeg" class="u-max-full-width" alt="Dr. Yan Yan" />
+              </a>
             </div>
+            <div class="project-caption">
+              <b>Dr. Yan Yan</b><br />Assisstant Professor, IIT
+            </div>
+          </div>
+        </div>
+        <!-- Member 3 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://oden.utexas.edu/people/directory/Joshua-Chang//" target="_blank" title="Click to view profile page">
+                <img src="assets/members/Chang.jpeg" class="u-max-full-width" alt="Dr. Joshua Chang" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Dr. Joshua Chang</b><br />Assisstant Professor, UT Austin
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="http://faculty.jsd.claremont.edu/jmilton/" target="_blank" title="Click to view profile page">
+                <img src="assets/members/Milton.jpeg" class="u-max-full-width" alt="Dr. John G. Milton" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Dr. John G. Milton</b><br />Professor, CMC
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://sanalmgr.github.io/" target="_blank" title="Click to view profile page">
+                <img src="assets/members/sana_profil_720x720.svg" class="u-max-full-width" alt="Dr. Sana Alamgeer" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Dr. Sana Alamgeer</b><br />Postdoctoral Researcher, TXST
+            </div>
+          </div>
+        </div>
 
 
-
-
-            
-            <div class="three columns">
-              <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://wyatt-mahoney.notion.site/Wyatt-Mahoney-507dd1ce8c3f40188e026a549b34f678?pvs=4">
-                    <img src="assets/members/Wyatt.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Wyatt Mahoney</b> <br/>
-                  B.S. student, TXST
-                </div>
-              
-              </div>
-             </div>    
-           
-           
-        </div> 
       </div>
+    </div>
+
+    <!-- Students Tab -->
+    <div class="tab-pane" id="tabs2">
+      <div class="row">
+        <!-- Student Member 1 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://sites.google.com/view/minakshi-debnath/home?authuser=0" target="_blank" title="Click to view profile page">
+                <img src="assets/members/Minakshi.jpg" class="u-max-full-width" alt="Minakshi Debnath" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Minakshi Debnath</b><br />Ph.D. Student, TXST
+            </div>
+          </div>
+        </div>
+        <!-- Add the rest of the students here -->
+        <!-- Student Member 2 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://tousifulhaque.github.io" target="_blank" title="Click to view profile page">
+                <img src="assets/members/Tousiful.png" class="u-max-full-width" alt="" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Syed Tousiful Haque</b><br />Ph.D. Student, TXST
+            </div>
+          </div>
+        </div>
+        <!-- Student Member 3 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://cpi12.github.io/" target="_blank" title="Click to view profile page">
+                <img src="assets/members/shahriar.jpeg" class="u-max-full-width" alt="" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Shahriar Kabir</b><br />Ph.D. Student, TXST
+            </div>
+          </div>
+        </div>
+        <!-- Student Member 4 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://www.linkedin.com/in/awatif-yasmin-01258b300/" target="_blank" title="Click to view profile page">
+                <img src="assets/members/Awatif.jpeg" class="u-max-full-width" alt="" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Awatif Yasmin</b><br />Ph.D. Student, TXST
+            </div>
+          </div>
+        </div>
+        <!-- Student Member 5 -->
+        <!--          
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="" target="_blank">
+                <img src="" class="u-max-full-width" alt="" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Minakshi Debnath</b><br />Ph.D. student, TXST
+            </div>
+          </div>
+        </div> -->
 
 
 
-    
-    <div class="tab-content">
-        <div class="tab-pane" id="tabs3">    
-
-          
-          <div class="row">
-
-            
-           <div class="three columns">
-            <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://www.liveoakliving.com/meet-the-team">
-                    <img src="assets/members/RM.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Rachel Medina</b> <br/>
-                  Executive Director, LiveOak
-                </div>
-
-             </div>
-           </div>
 
 
-            
-           <div class="three columns">
-            <div class="member-container">
-
-                <div class="member-image-container">
-                  <a href="https://www.soci.txstate.edu/People/faculty/k_chee.html">
-                    <img src="assets/members/KC.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>Dr.Kyong Hee Chee</b> <br/>
-                  Professor, TXST
-                </div>
-              
-              </div>
-             </div>    
-           
-           
-        </div> 
       </div>
-  
-<div class="tab-content">
-  <div class="tab-pane" id="tabs4">
-  <p> <a href="https://userweb.cs.txstate.edu/~k_b459/" target="_blank">Keshav Bhandari</a>, Ph.D. 2018-2022. </p>
-  <p> <a href=" https://il.linkedin.com/in/nader-maray-a0aa7986" target="_blank">Nader Maray</a>, M.S. 2021-2023. </p>   
-  <p> <a href="https://jiany-ctrl.github.io/" target="_blank">Jianyuan Ni</a>, Ph.D. 2020-2024. </p>
+    </div>
+
+    <!-- Consultant Tab -->
+    <div class="tab-pane" id="tabs3">
+      <div class="row">
+        <!-- Consultant Member 1 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://www.liveoakliving.com/meet-the-team" target="_blank" title="Click to view profile page">
+                <img src="assets/members/RM.jpeg" class="u-max-full-width" alt="Rachel Medina" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Rachel Medina</b><br />Executive Director, LiveOak
+            </div>
+          </div>
+        </div>
+        <!-- Add the rest of the consultants here -->
+         <!-- Consultant Member 2 -->
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="https://scholar.google.com/citations?user=yxs_yJoAAAAJ&hl=en" target="_blank" title="Click to view profile page">
+                <img src="assets/members/KC.jpeg" class="u-max-full-width" alt="Rachel Medina" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Dr. Kyong Hee Chee</b><br />Professor, TXST
+            </div>
+          </div>
+        </div>
+        
+        <!-- Consultant Member 3 -->
+        <!--          
+        <div class="three columns">
+          <div class="member-container">
+            <div class="member-image-container">
+              <a href="" target="_blank">
+                <img src="" class="u-max-full-width" alt="" />
+              </a>
+            </div>
+            <div class="project-caption">
+              <b>Rachel Medina</b><br />Executive Director, LiveOak
+            </div>
+          </div>
+        </div> 
+        -->
+
+
+
+      </div>
+    </div>
+
+    <!-- Alumni Tab -->
+    <div class="tab-pane" id="tabs4">
+      <div class="row">
+        <div class="nine columns">
+          <ol>
+            <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdavid-torrente&data=05%7C02%7Cj_n317%40txstate.edu%7Cacf048407ce047919bf108dc531d35e0%7Cb19c134a14c94d4caf65c420f94c8cbb%7C0%7C0%7C638476632184868978%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=jiyEC7h3B7fAm0sSfrMze%2FXH9YqzjsRB4pcl%2BAW%2FlKo%3D&reserved=0/" target="_blank">David Torrente</a>, M.S. 2022-2024.</li>
+            <li><a href="https://wyatt-mahoney.notion.site/Wyatt-Mahoney-507dd1ce8c3f40188e026a549b34f678?pvs=4/" target="_blank">Wyatt Mahoney</a>, B.S. 2022-2024.</li>
+            <li><a href="https://jiany-ctrl.github.io/" target="_blank">Jianyuan Ni</a>, Ph.D. 2020-2024.</li>
+            <li><a href="https://il.linkedin.com/in/nader-maray-a0aa7986" target="_blank">Nader Maray</a>, M.S. 2021-2023.</li>
+            <li><a href="https://userweb.cs.txstate.edu/~k_b459/" target="_blank">Keshav Bhandari</a>, Ph.D. 2018-2022.</li>
+          </ol>
+
+        </div>
+        
+
+      </div>
+      
+      
+      
+    </div>
   </div>
- 
-</div>
 </div>
 
 
-
-
-
-
-       
 
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
-  <h4>Research Works</h4>
+  <h4>Research Papers</h4>
 
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-  </ul> 
-  
+    <li>
+      <div class="button active" data-ref="#papers-selected">Selected</div>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+
+      <!-- Paper 1 -->
+      <div class="paper">
+        <p class="title"><b>Adaptive Cross-architecture Mutual Knowledge Distillation</b></p>
+        <p>Ni J., Tang H., Shang Y., Duan B, Yan Y.</p>
+        <p><i>The 18th IEEE International Conference on Automatic Face and Gesture Recognition, Istanbul, Turkey, 27-31 May 2024.</i></p>
+        <div class="paper-buttons">
+          <a class="button" href="https://fg2024.ieee-biometrics.org/" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Paper 2 -->
+      <div class="paper">
+        <p class="title"><b>Multimodal ConvTransformer for Human Activity Recognition</b></p>
+        <p>Haque S.T., Ngu A.H.</p>
+        <p><i>IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies Proceedings (CHASE 2024), June 19-21, Wilmington, DE, USA.</i></p>
+        <div class="paper-buttons">
+          <a class="button" href="https://conferences.computer.org/chase2024/" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Paper 3 -->
+      <div class="paper">
+        <p class="title"><b>The Impact of Synthetic Data on Fall Detection Application</b></p>
+        <p>Debnath M., Kabir Md. S., Ni J., Ngu A.H.</p>
+        <p><i>22nd International Conference on Artificial Intelligence in Medicine (AIME 2024), July 9-12, Salt Lake City, Utah, USA.</i></p>
+        <div class="paper-buttons">
+          <a class="button" href="https://aime24.aimedicine.info/" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Paper 4 -->
+      <div class="paper">
+        <p class="title"><b>An Empirical Study on AI-Powered Edge Computing Architectures for Real-Time IoT Applications</b></p>
+        <p>Yasmin A., Mahmud T., Debnath M., Ngu A.H.</p>
+        <p><i>IEEE Computers, Software, and Applications Conference (COMPSAC 2024), July 2-4, Osaka, Japan.</i></p>
+        <div class="paper-buttons">
+          <a class="button" href="https://ieeecompsac.computer.org/2024/" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Paper 5 -->
+      <div class="paper">
+        <p class="title"><b>Pole Balancing on the Fingertip: Model-motivated Machine Learning Forecasting of Falls</b></p>
+        <p>Debnath M., Chang J., Bhandari K., Nagy D.J., Insperger T., Milton J.G., Ngu A.H.</p>
+        <p><i>Frontiers in Physiology (2024).</i></p>
+        <div class="paper-buttons">
+          <a class="button" href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1334396/full" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Paper 6 -->
+      <div class="paper">
+        <p class="title"><b>P-Fall: Personalization Pipeline for Fall Detection on Wearable</b></p>
+        <p>Ngu A.H., Yasmin A., Mahmud T., Mahmood A., Sheng Q.Z.</p>
+        <p><i>IEEE/ACM CHASE 2023.</i></p>
+        <div class="paper-buttons">
+          <a class="button" href="https://digital.library.txstate.edu/bitstream/handle/10877/16756/Ngu-THRC-Health%20Scholar%20Showcase.pdf?sequence=1" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Paper 7 -->
+      <div class="paper">
+        <p class="title"><b>Generating Realistic Multi-class Biosignals with BioSGAN: A Transformer-based Label-guided Generative Adversarial Network</b></p>
+        <p>Li X., Ngu A.H., Metsis V.</p>
+        <p><i>ICAI 2023.</i></p>
+        <div class="paper-buttons">
+          <a class="button" href="https://www.computer.org/csdl/proceedings-article/csce/2023/275900a009/1W0gV7eOxEs" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Add other papers similarly -->
+      <div class="paper">
+        <p class="title"><b>Transfer Learning On Small Datasets for Improved Fall Detection</b></p>
+        <p> Maray, N., Ngu, A. H., Ni, J., Debnath, M., Wang, L. </p>
+        <p><i> Sensors 2022. </i></p>
+         <div class="paper-buttons">            
+              <a class="button" href="https://www.mdpi.com/1424-8220/23/3/1105" target="_blank">Paper</a> 
+        </div>
+      </div>
+
+      <div class="paper">
+        <p class="title"><b>Personalized Watch-based Fall Detection Using a Collaborative Edge-Cloud Framework</b></p>
+        <p> Ngu, AH, Metsis V., Coyne S., Srinivas P., Mahmud T., Chee KH., </p>
+        <p><i> IJNS 2022. </i></p>
+         <div class="paper-buttons">            
+              <a class="button" href="https://www.worldscientific.com/doi/10.1142/S0129065722500484" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <p class="title"><b>Progressive Cross-modal Knowledge Distillation for Human Action Recognition</b></p>
+        <p>Ni, J., Ngu, A. H., & Yan, Y.</p>
+        <p><i> ACM MM 2022. </i></p>
+        <div class="paper-buttons">            
+            <a class="button" href="https://arxiv.org/pdf/2208.08090.pdf" target="_blank">Paper</a>
+          
+        </div>
+      </div>
+
+      <div class="paper">
+        <p class="title"><b>TTS-GAN: A Transformer-based Time-Series Generative Adversarial Network</b></p>
+        <p>Li, X., Metsis, V., Wang, H., & Ngu, A. H. H.</p>
+        <p><i> AIME 2022, Canada. </i></p>
+        <div class="paper-buttons">            
+            <a class="button" href="https://arxiv.org/pdf/2202.02691.pdf" target="_blank">Paper</a>
+          
+        </div>
+      </div>
+
+      <div class="paper">
+        <p class="title"><b>Cross-modal knowledge distillation for Vision-to-Sensor action recognition</b></p>
+        <p>Ni, J., Sarbajna, R., Liu, Y., Ngu, A. H., & Yan, Y.</p>
+        <p><i> ICASSP 2022,pp. 4448-4452 </i></p>
+        <div class="paper-buttons">            
+            <a class="button" href="https://ieeexplore.ieee.org/document/9746752" target="_blank">Paper</a>
+          
+        </div>
+      </div>
     
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
+       <div class="paper">
+        <p class="title"><b>Collaborative Edge-Cloud Computing for Personalized Fall Detection</b></p>
+        <p>Ngu, A. H., Coyne, S., Srinivas, P., & Metsis, V.</p>
+        <p><i> AIAI 2021,pp. 323-336 </i></p>
+        <div class="paper-buttons">            
+            <a class="button" href="https://link.springer.com/chapter/10.1007/978-3-030-79150-6_26" target="_blank">Paper</a>
+          
+        </div>
+      </div>
 
-<div class="paper">
-      <p>
-      <p class="title"><b>Adaptive Cross-architecture Mutual Knowledge Distillation</b></p>
-      <p>	Ni J., Tang H., Shang Y., Duan B, Yan Y.</p>
-      <p><i> The 18th IEEE International Conference on Automatic Face and Gesture Recognition, Istanbul, Turkey, 27-31 May 2024.</i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://fg2024.ieee-biometrics.org/" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>         
-<div class="paper">
-      <p>
-      <p class="title"><b> Multimodal ConvTransformer for Human Activity Recognition</b></p>
-      <p> Haque S.T. and Ngu A. H.</p>
-      <p><i>IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies Proceedings (CHASE 2024), June 19-21, Wilmington, DE, USA. </i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://conferences.computer.org/chase2024/" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>   
-      
       <div class="paper">
-      <p>
-      <p class="title"><b> The Impact of Synthetic Data on Fall Detection Application</b></p>
-      <p> Debnath M., Kabir Md. S., Ni J., Ngu A. H</p>
-      <p><i>22nd International Conference on Artificial Intelligence in Medicine (AIME 2024),  July 9-12, Salt Lake City, Utah, USA </i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://aime24.aimedicine.info/" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>  
-      
-      <div class="paper">
-      <p>
-      <p class="title"><b> An Empirical Study on AI-Powered Edge Computing Architectures for Real-Time IoT Applications </b></p>
-      <p> 	Yasmin A., Mahmud T., Debnath M., Ngu A. H.   </p>
-      <p><i> IEEE Computers, Software, and Applications Conference (COMPSAC 2024), July2-4, Osaka, Japan</i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://ieeecompsac.computer.org/2024/" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>  
-      
-      <div class="paper">
-      <p>
-      <p class="title"><b> Pole balancing on the fingertip: model-motivated machine learning forecasting of falls </b></p>
-      <p> 	Debnath, M., Chang, J., Bhandari, K., Nagy, D. J., Insperger, T., Milton, J. G., & Ngu, A. H. <p>
-      <p><i>Frontiers in physiology (2024)</i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1334396/full" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>    
-      
-      <div class="paper">
-      <p>
-      <p class="title"><b>P-Fall: Personalization Pipeline for Fall Detection on Wearable</b></p>
-      <p> Ngu A.H., Yasmin A., Mahmud T.,Mahmood A., Sheng Q.Z.<p>
-      <p><i> IEEE/ACM CHASE 2023. </i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://digital.library.txstate.edu/bitstream/handle/10877/16756/Ngu-THRC-Health%20Scholar%20Showcase.pdf?sequence=1" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>    
-      
-           <div class="paper">
-      <p>
-      <p class="title"><b>Generating Realistic Multi-class Biosignals with BioSGAN: A Transformer-based Label-guided Generative Adversarial Network</b></p>
-      <p> Li  X., Ngu. A.H., Metsis V., <p>
-      <p><i> ICAI 2023. </i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://www.computer.org/csdl/proceedings-article/csce/2023/275900a009/1W0gV7eOxEs" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>   
-           
-      
-      <div class="paper">
-      <p>
-      <p class="title"><b>Transfer Learning On Small Datasets for Improved Fall Detection</b></p>
-      <p> Maray, N., Ngu, A. H., Ni, J., Debnath, M., Wang, L. <p>
-      <p><i> Sensors 2022. </i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://www.mdpi.com/1424-8220/23/3/1105" target="_blank">Paper</a>
-      </p>  
-          </div>
+        <p class="title"><b>SmartFall: A Smartwatch-Based Fall Detection System Using Deep Learning</b></p>
+        <p>Mauldin, T. R., Canby, M. E., Metsis, V., Ngu, A. H., & Rivera, C. C.</p>
+        <p><i> Sensors, 18(10), 3363. </i></p>
+        <div class="paper-buttons">            
+            <a class="button" href="https://www.mdpi.com/1424-8220/18/10/3363" target="_blank">Paper</a>
+          
         </div>
+      </div>
+    
+      <div class="paper">
+        <p class="title"><b>Ensemble Deep Learning on Wearables Using Small Datasets</b></p>
+        <p>Mauldin, T., Ngu, A. H., Metsis, V., & Canby, M. E.</p>
+        <p><i> ACM Transactions on Computing for Healthcare, 2(1), 1-30. </i></p>
+        <div class="paper-buttons">            
+            <a class="button" href="https://dl.acm.org/doi/abs/10.1145/3428666?casa_token=yRlg62jlwYgAAAAA:69CBCMhR7Q4nqk3ZRvu8nnsgC08j6vfNtDwp8qN7EeURQkMGqP5guZ8k41exJGKOfJeOUAsB8CaD" target="_blank">Paper</a>
+          
+        </div>
+      </div>
 
-          <div class="paper">
-      <p>
-      <p class="title"><b>Personalized Watch-based Fall Detection Using a Collaborative Edge-Cloud Framework</b></p>
-      <p> Ngu, AH, Metsis V., Coyne S., Srinivas P., Mahmud T., Chee KH., <p>
-      <p><i> IJNS 2022. </i></p>
-       <div class="paper-buttons">            
-            <a class="button" href="https://www.worldscientific.com/doi/10.1142/S0129065722500484" target="_blank">Paper</a>
-      </p>  
-          </div>
-        </div>
-  
-  
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      
-        <div class="paper">
-          <p class="title"><b>Progressive Cross-modal Knowledge Distillation for Human Action Recognition</b></p>
-          <p>Ni, J., Ngu, A. H., & Yan, Y.</p>
-          <p><i> ACM MM 2022. </i></p>
-           <div class="paper-buttons">            
-              <a class="button" href="https://arxiv.org/pdf/2208.08090.pdf" target="_blank">Paper</a>
-            
-          </div>
-        </div>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      
-        <div class="paper">
-          <p class="title"><b>TTS-GAN: A Transformer-based Time-Series Generative Adversarial Network</b></p>
-          <p>Li, X., Metsis, V., Wang, H., & Ngu, A. H. H.</p>
-          <p><i> AIME 2022, Canada. </i></p>
-           <div class="paper-buttons">            
-              <a class="button" href="https://arxiv.org/pdf/2202.02691.pdf" target="_blank">Paper</a>
-            
-          </div>
-        </div>
-      
-         <div class="paper">
-          <p class="title"><b>Cross-modal knowledge distillation for Vision-to-Sensor action recognition</b></p>
-          <p>Ni, J., Sarbajna, R., Liu, Y., Ngu, A. H., & Yan, Y.</p>
-          <p><i> ICASSP 2022,pp. 4448-4452 </i></p>
-           <div class="paper-buttons">            
-              <a class="button" href="https://ieeexplore.ieee.org/document/9746752" target="_blank">Paper</a>
-            
-          </div>
-        </div>
-      
-         <div class="paper">
-          <p class="title"><b>Collaborative Edge-Cloud Computing for Personalized Fall Detection</b></p>
-          <p>Ngu, A. H., Coyne, S., Srinivas, P., & Metsis, V.</p>
-          <p><i> AIAI 2021,pp. 323-336 </i></p>
-           <div class="paper-buttons">            
-              <a class="button" href="https://link.springer.com/chapter/10.1007/978-3-030-79150-6_26" target="_blank">Paper</a>
-            
-          </div>
-        </div>
-         
-        <div class="paper">
-          <p class="title"><b>SmartFall: A Smartwatch-Based Fall Detection System Using Deep Learning</b></p>
-          <p>Mauldin, T. R., Canby, M. E., Metsis, V., Ngu, A. H., & Rivera, C. C.</p>
-          <p><i> Sensors, 18(10), 3363. </i></p>
-           <div class="paper-buttons">            
-              <a class="button" href="https://www.mdpi.com/1424-8220/18/10/3363" target="_blank">Paper</a>
-            
-          </div>
-        </div>
-      
-        <div class="paper">
-          <p class="title"><b>Ensemble Deep Learning on Wearables Using Small Datasets</b></p>
-          <p>Mauldin, T., Ngu, A. H., Metsis, V., & Canby, M. E.</p>
-          <p><i> ACM Transactions on Computing for Healthcare, 2(1), 1-30. </i></p>
-           <div class="paper-buttons">            
-              <a class="button" href="https://dl.acm.org/doi/abs/10.1145/3428666?casa_token=yRlg62jlwYgAAAAA:69CBCMhR7Q4nqk3ZRvu8nnsgC08j6vfNtDwp8qN7EeURQkMGqP5guZ8k41exJGKOfJeOUAsB8CaD" target="_blank">Paper</a>
-            
-          </div>
-        </div>
-      
-      
-      </div>    
+
+
+
+
+
+
+
     </div>
   </div>
+</div>
+
+<!-- Demos -->
+<div class="docs-section" id="demos">
+  <h4>Demos</h4>
+  <p>Coming soon...</p>
+
+</div>
+
+
+<p> 
+  <a class="dtst_paper_button" href="#headerTop">Back To Top</a>
+</p>
+
+
 
 <!-- 
 <div class="docs-section" id="template">
@@ -647,12 +612,12 @@
 
     <div class="footer">
       <div class="row">
-        <div class="five columns">
-          Department of Computer Science, TXST
+        <div class="nine columns">
+          <p>SmartFall<sup>&copy;</sup>, 2024</p>
+          <p>Department of Computer Science, TXST</p>
+          <p>Location: 601 University Drive, San Marcos, TX 78666-4684</p>
         </div>
-        <div class="five columns">
-          Contact: 601 University Drive, San Marcos, TX 78666-4684
-        </div>
+       
 <!--         <div class="four columns">
           
         </div> -->

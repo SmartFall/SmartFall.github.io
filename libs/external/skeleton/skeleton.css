@@ -26,6 +26,25 @@
 */
 
 
+.three.columns {
+  flex: 1 1 20%; /* Makes columns flexible with a base size of 20% */
+  max-width: 200px; /* Optional: Restrict maximum width of each column */
+  box-sizing: border-box; /* Ensures padding/margins don't affect dimensions */
+}
+
+.member-image-container img {
+  width: 100%; /* Ensures images fit their container */
+  aspect-ratio: 1/1; /* Enforces square aspect ratio */
+  object-fit: cover; /* Crops images to fill the container */
+  height: auto; /* Maintains proportions */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.member-container {
+  text-align: center; /* Centers text below images */
+}
+
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -57,18 +76,19 @@
     margin-left: 4%; }
   .column:first-child,
   .columns:first-child {
-    margin-left: 0; }
+    /* margin-left: 0;*/ } 
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
+  .three.columns                  { width: 22% !important;            }
   .four.columns                   { width: 30.6666666667%; }
   .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }
   .seven.columns                  { width: 56.6666666667%; }
   .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
+  /* .nine.columns                   { width: 74.0%;          } */
+  .nine.columns                   { width: 100%;          }
   .ten.columns                    { width: 82.6666666667%; }
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
@@ -350,11 +370,13 @@ blockquote,
 dl,
 figure,
 table,
-p,
 ul,
 ol,
 form {
   margin-bottom: 2.5rem; }
+
+p {
+  margin-bottom: 1.5rem; }
 
 
 /* Utilities
