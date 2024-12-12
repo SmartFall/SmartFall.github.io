@@ -1,4 +1,7 @@
-
+.small-margins {
+  margin-bottom: 0rem !important;
+  margin-top: 0px !important;
+}
 
 .docs-section p:first-of-type {
   line-height: 34px; 
@@ -379,11 +382,13 @@ img.img_logos{
     color: #ffffff; /* Keeps text white on hover */
     transform: scale(1.1); /* Slight zoom-in effect */
     box-shadow: 0px 4px 10px rgba(111, 115, 116, 0.5); /* Glow effect */
+    text-shadow: 1px 1px #8a8888;
   }
   .navbar-link.active {
     background-color: #33C3F0; /* Highlight color on hover */
     color: #ffffff; /* Keeps text white on hover */
     box-shadow: 0px 4px 10px rgba(111, 115, 116, 0.5); 
+    text-shadow: 1px 1px #8a8888;
   }
   .has-docked-nav .navbar {
     position: fixed;
