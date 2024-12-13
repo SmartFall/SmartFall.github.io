@@ -1,3 +1,16 @@
+
+.button:hover{
+  box-shadow: 1px 2px 3px #e1e1e1;
+}
+
+.code-button {
+  margin-left: 14px;
+  color: #3a3939;
+  border-color: #bfbfbf;
+  background-color: #e7f2f5;
+
+}
+
 .small-margins {
   margin-bottom: 0rem !important;
   margin-top: 0px !important;
@@ -41,6 +54,7 @@
 .dtst_paper_button:hover {
   background-color: #f9f9f9; /* Slight background highlight on hover */
   color: #000; /* Darken text on hover */
+  box-shadow: 1px 2px 3px #e1e1e1;
 }
 
 

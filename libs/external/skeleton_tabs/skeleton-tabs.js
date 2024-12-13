@@ -1,36 +1,38 @@
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("jQuery version:", $.fn.jquery);
 
-$(function() {
-    $('ul.tab-nav li .button').click(function() {
-        var href = $(this).attr('data-ref');
+  // JavaScript-based tab functionality
+  function showTab(selected, total) {
+      for (let i = 1; i <= total; i += 1) {
+          const tabPane = document.getElementById('tabs' + i);
+          if (tabPane) {
+              tabPane.style.display = 'none';
+          }
+      }
 
-        $('li .active.button', $(this).parent().parent()).removeClass('active');
-        $(this).addClass('active');
-
-        $('.tab-pane.active', $(href).parent()).removeClass('active');
-        $(href).addClass('active');
-
-        $('.tab-pane.fade', $(href).parent()).removeClass('fade');
-        $(this).addClass('active');
-
-        /*
-        var toScroll = $(this).parent().parent().parent().parent();
-
-        $('html, body').animate({
-    		scrollTop: toScroll.offset().top
-		}, 1000);
-		*/
-
-        return false;
-    });
-});
-
-
-function showTab(selected, total)
-{
-  for(i = 1; i <= total; i += 1)
-  {
-    document.getElementById('tabs-' + i).style.display = 'none';
+      const activeTabPane = document.getElementById('tabs' + selected);
+      if (activeTabPane) {
+          activeTabPane.style.display = 'block';
+      } else {
+          console.error(`Tab pane with ID 'tabs${selected}' not found.`);
+      }
   }
 
-  document.getElementById('tabs-' + selected).style.display = 'block';
-}
+  // Attach showTab to the global scope if needed
+  window.showTab = showTab;
+});
+
+$(document).ready(function() {
+  $(document).on('click', 'ul.tab-nav li .button', function() {
+      var href = $(this).attr('data-ref');
+      console.log("Button clicked. Target href:", href); // Debugging
+
+      $('ul.tab-nav li .button.active').removeClass('active');
+      $(this).addClass('active');
+
+      $('.tab-pane.active').removeClass('active');
+      $(href).addClass('active');
+
+      return false;
+  });
+});
